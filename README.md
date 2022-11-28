@@ -77,13 +77,13 @@ Mageck (version 0.5.9.4) count was used to quantify the number of reads per sgRN
 
 # different tools
 
-## 1.MAGeCK (original MAGeCK, or ‘MAGeCK-RRA’)
+1.MAGeCK (original MAGeCK, or ‘MAGeCK-RRA’)
 - four steps: read count normalization, mean-variance modeling, sgRNA ranking and gene ranking
 - sgRNAs are ranked based on P-values calculated from the negative binomial model
 - a modified robust ranking aggregation (RRA) algorithm named α-RRA to is used to identify positively or negatively selected genes.
 - different from edgeR, deseq2: not only at sgRNAs but also at gene and pathway levels
 
-## 2.MAGeCK-VISPR (MAGeCK-mle + VISPR)
+2.MAGeCK-VISPR (MAGeCK-mle + VISPR)
 - extends MAGeCK-RRA by a maximum likelihood estimation method to call essential genes under multiple conditions (MAGeCK-RRA can only compare samples between two conditions) while considering sgRNA knockout efficiency
 - provides a web-based visualization framework (VISPR)
 
